@@ -1,12 +1,14 @@
 import { join } from 'path'
-import * as fs from 'fs-extra'
+import { pathExists, copy } from 'fs-extra'
 
-export const create = async (targetDir: string, template = 'prisma-nexus') => {
+export const create = async (targetDir: string, template: string) => {
+  if (!(typeof template === 'string' && template.trim().length > 0)) {
+    template = 'dal'
+  }
   const files = join(__dirname, `../templates/${template}`)
-  // copy files
-  if (!(await fs.pathExists(files))) {
+  if (!(await pathExists(files))) {
     console.error(`template "${template}" not exist`)
     process.exit()
   }
-  await fs.copy(files, targetDir)
+  await copy(files, targetDir)
 }

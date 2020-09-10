@@ -1,4 +1,5 @@
 import { join } from 'path'
+
 import { parseArgv } from './parse'
 import { create } from './create'
 import { install } from './install'
@@ -8,8 +9,9 @@ const run = async () => {
 
   const targetDir = join(process.cwd(), dir)
 
-  await create(targetDir, template || 'prisma')
+  await create(targetDir, template)
   console.log('Successfully created.')
+
   await install(targetDir)
   console.log('Successfully installed.')
 }
