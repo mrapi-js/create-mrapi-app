@@ -1,6 +1,6 @@
 {
   "name": "create-mrapi-app",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.2",
   "main": "lib/index.js",
   "bin": {
     "create-mrapi-app": "./bin/run"
@@ -19,6 +19,7 @@
     "templates"
   ],
   "scripts": {
+    "prepublish": "npm run build",
     "build": "npm run clean && tsc -b .",
     "watch": "tsc --preserveWatchOutput --watch",
     "clean": "rm -rf lib && rm -rf tsconfig.tsbuildinfo && rm -rf node_modules",
