@@ -1,7 +1,6 @@
 {
   "name": "create-mrapi-app",
   "version": "1.0.0-beta.2",
-  "main": "lib/index.js",
   "bin": {
     "create-mrapi-app": "./bin/run"
   },
@@ -14,50 +13,18 @@
   ],
   "license": "MIT",
   "files": [
-    "lib",
     "bin",
-    "templates"
+    "index.js"
   ],
-  "scripts": {
-    "prepublish": "npm run build",
-    "build": "npm run clean && tsc -b .",
-    "watch": "tsc --preserveWatchOutput --watch",
-    "clean": "rm -rf lib && rm -rf tsconfig.tsbuildinfo && rm -rf node_modules",
-    "eslint": "eslint src/**/*.ts",
-    "eslint-fix": "eslint src/**/*.ts --fix",
-    "prettier": "prettier --write src/**/*.ts"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pnpm run eslint"
-    }
-  },
+  "scripts": {},
   "prettier": {
     "semi": false,
     "tabWidth": 2,
     "singleQuote": true,
     "trailingComma": "all"
   },
-  "dependencies": {
-    "tslib": "^2.0.1",
-    "fs-extra": "^9.0.1"
-  },
-  "devDependencies": {
-    "@types/fs-extra": "^9.0.1",
-    "jest": "^26.4.2",
-    "typescript": "^4.0.2",
-    "@typescript-eslint/eslint-plugin": "^4.1.0",
-    "eslint-config-standard-with-typescript": "19.0.1",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-import": "2.22.0",
-    "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-standard": "4.0.1",
-    "eslint-config-prettier": "6.11.0",
-    "eslint-plugin-jest": "24.0.0",
-    "eslint": "7.8.1",
-    "prettier": "^2.1.1",
-    "husky": "^4.3.0"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrapi-js/create-mrapi-app.git"
