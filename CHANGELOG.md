@@ -1,7 +1,15 @@
-# Change Log
+# Changelog
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.0.0 (2020-10-14)
+
+
+### Features
+
+* init ([6569859](https://github.com/mrapi-js/create-mrapi-app/commit/656985994bbac68e846976dbd3d86464753f5118))
+* templates/dal init ([b99dac0](https://github.com/mrapi-js/create-mrapi-app/commit/b99dac064e9a74a6eda47a9e9b4d4b644648b271))
+* use fbi command ([c51c4f1](https://github.com/mrapi-js/create-mrapi-app/commit/c51c4f153c6b8aa5721bb1a6bd818331c039cc0e))
 
 # [0.7.0-alpha.0](https://github.com/mrapi-js/mrapi/compare/create-mrapi-app@0.6.0-alpha.0...create-mrapi-app@0.7.0-alpha.0) (2020-06-11)
 
