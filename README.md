@@ -1,11 +1,6 @@
 # create-mrapi-app
 
-Thank you for checking out mrapi.
-
-We strongly recommend that you use [fbi create](https://github.com/fbi-js/factory-node) to initialize the mrapi project.
-
-More info: https://github.com/fbi-js
-
+Thank you for checking out [mrapi](https://github.com/mrapi-js/mrapi).
 
 ## Usage
 
